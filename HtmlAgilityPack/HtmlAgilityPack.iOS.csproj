@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABEF8728-33AB-47FA-BAFC-24410B496D7D}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HtmlAgilityPack.MonoTouch</RootNamespace>
+    <AssemblyName>HtmlAgilityPack.MonoTouch</AssemblyName>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv6</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv6</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="crc32.cs" />
+    <Compile Include="EncodingFoundException.cs" />
+    <Compile Include="HtmlAttribute.cs" />
+    <Compile Include="HtmlAttributeCollection.cs" />
+    <Compile Include="HtmlCmdLine.cs" />
+    <Compile Include="HtmlCommentNode.cs" />
+    <Compile Include="HtmlConsoleListener.cs" />
+    <Compile Include="HtmlDocument.cs" />
+    <Compile Include="HtmlElementFlag.cs" />
+    <Compile Include="HtmlEntity.cs" />
+    <Compile Include="HtmlNameTable.cs" />
+    <Compile Include="HtmlNode.cs" />
+    <Compile Include="HtmlNodeCollection.cs" />
+    <Compile Include="HtmlNodeNavigator.cs" />
+    <Compile Include="HtmlNodeType.cs" />
+    <Compile Include="HtmlParseError.cs" />
+    <Compile Include="HtmlParseErrorCode.cs" />
+    <Compile Include="HtmlTextNode.cs" />
+    <Compile Include="HtmlWeb.cs" />
+    <Compile Include="HtmlWebException.cs" />
+    <Compile Include="IOLibrary.cs" />
+    <Compile Include="MixedCodeDocument.cs" />
+    <Compile Include="MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="MixedCodeDocumentFragment.cs" />
+    <Compile Include="MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="NameValuePair.cs" />
+    <Compile Include="NameValuePairList.cs" />
+  </ItemGroup>
+</Project>
